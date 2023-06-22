@@ -3,11 +3,11 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'League', href: '#' },
-  { name: 'Playoffs', href: '#' },
-  { name: 'Tournament', href: '#' },
-  { name: 'Rules', href: '#' },
-  { name: 'About Us', href: '#' },
+  { name: 'league', href: '#' },
+  { name: 'playoffs', href: '#' },
+  { name: 'tournament', href: '#' },
+  { name: 'rules', href: '#' },
+  { name: 'about us', href: '#' },
 ]
 
 export default function SiteHeader() {
@@ -17,9 +17,9 @@ export default function SiteHeader() {
     <header className="bg-gray-900">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" >
             <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="" />
+            <img className="h-15 w-auto" src="/src/assets/CRHL_Logo_Black.png" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -34,7 +34,7 @@ export default function SiteHeader() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="lg:text-[1.4vw] font-semibold leading-6 dark:text-gray-light">
+            <a key={item.name} href={item.href} className="lg:text-[1.2vw] font-semibold leading-6 text-gray-dark dark:text-gray-light">
               {item.name}
             </a>
           ))}
